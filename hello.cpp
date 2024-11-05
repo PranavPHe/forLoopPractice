@@ -1,3 +1,8 @@
+// Pranav Pramod
+// 11/5/2024
+// Extra: Day Counter
+
+// Imports
 #include <iostream>
 #include <string>
 #include <random>
@@ -6,15 +11,18 @@ using namespace std;
 int main()
 {
     // Exercise 1:
+    // Array of weeks and quotes
     string quotes[7];
     string DoW[7] = {"Monday", "Teusday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 
+    // Getting input for each day
     for (int i = 0; i < 7; i++)
     {
         cout << DoW[i] << "\nEnter Quote: " << endl;
         getline(cin, quotes[i]);
     }
     printf("\n");
+    // Printing the quotes at the end
     for (int i = 0; i < 7; i++)
     {
         cout << quotes[i] << endl;
@@ -25,6 +33,7 @@ int main()
     int supplies = 0;
     int day = 0;
 
+    // 
     while (energy > 0 && supplies < 10)
     {
         int choice;
